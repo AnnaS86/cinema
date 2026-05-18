@@ -83,6 +83,60 @@ body {
     max-width: 560px;
 }
 
+/* Отсюда начался Урок 3 */
+
+    /* cursor: pointer;
+    margin-top: 15px; */
+
+.select-cinema {
+    min-width: 470px;
+}
+
+.scheme {
+    margin-bottom: 40px;
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+
+/* Для всех кроме light */
+.scheme path:not(.light) {
+    /* Белый цвет */
+    fill:rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+/* При наведении на кресла прозрачность увеличивается */
+.scheme path:not(.light):hover {
+    fill:rgba(255, 255, 255, 0.5);
+}
+
+/* Занятые места */
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill:rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+/* Занятые места */
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #fe8e05;
+    cursor: not-allowed;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+}
+
 
 
 
