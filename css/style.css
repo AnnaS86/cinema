@@ -83,14 +83,27 @@ body {
     max-width: 560px;
 }
 
-/* Отсюда начался Урок 3 */
+/* Здесь закончился Урок 2*/
 
-    /* cursor: pointer;
-    margin-top: 15px; */
+    /* background-color: #fe8e05;
+    color: #621402; */
+
+
+.select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    padding: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
 
 .select-cinema {
     min-width: 470px;
 }
+
+/* Отсюда начался Урок 3 */
 
 .scheme {
     margin-bottom: 40px;
@@ -127,6 +140,14 @@ body {
 .legend {
     display: flex;
     align-items: center;
+    /* Полосочка для отделения легенды от схемы */
+    margin-top: 1px solid rgba(255, 255, 255, 0.5);
+    /* Чтобы ограничить ширину легенды = длину полосочки */
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+
 
 }
 
@@ -134,9 +155,45 @@ body {
     display: flex;
     align-items: center;
     margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+    margin-right: 15px;
 
 }
 
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    display: block;
+    background: #fe8e05;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
 
 
 
